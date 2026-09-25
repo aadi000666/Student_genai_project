@@ -1,1 +1,0 @@
-# Student_genai_project
