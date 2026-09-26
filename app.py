@@ -15,7 +15,7 @@ load_dotenv()
 
 api_key = os.getenv("API") or os.getenv("OPENAI_API_KEY")
 if not api_key:
-    print("Error: API Key nahi mili! Check .env file.")
+    print("Error:There no api key found! Check .env file.")
     exit()
 
 client = genai.Client(api_key=api_key)
@@ -42,12 +42,11 @@ def chat_with_gemini(prompt):
 if __name__ == "__main__":
     print(greeting())
     print(
-        "Gemini AI Chatbot mein aapka swagat hai! (quit likhein band karne ke"
-        " liye)\n"
+        "Welcome to gemini chatbot!\n"
     )
 
     while True:
-        user_input = input("Aap: ").strip()
+        user_input = input("YOU: ").strip()
         if not user_input:
             continue
         if user_input.lower() in ("quit", "exit", "band"):
@@ -55,6 +54,6 @@ if __name__ == "__main__":
             break
         try:
             reply = chat_with_gemini(user_input)
-            print(f"siya: {reply}\n")
+            print(f"GEMINI: {reply}\n")
         except Exception as e:
-            print(f"Error aaya hai: {e}\n")
+            print(f"Error: {e}\n")
