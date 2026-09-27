@@ -1,6 +1,6 @@
-# 🤖  Gemini AI Assistant
+# 🤖 AI Assistant
 
-Siya is an intelligent desktop AI assistant built with **Google Gemini API** and **Python**. It supports interactive terminal-based chat capabilities and personalized greetings.
+Intelligent desktop AI assistant built with **Google Gemini API** and **Python**. It supports interactive terminal-based chat capabilities and personalized greetings.
 
 ---
 
