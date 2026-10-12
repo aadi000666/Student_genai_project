@@ -184,6 +184,7 @@ If `python-dotenv` is loading the key correctly (via `load_dotenv()` in `app.py`
 | `GEMINI_API_KEY`   | Your Google Gemini API key            | ✅ Yes   |
 
 > ⚠️ Never push your `.env` file to GitHub. It's already listed in `.gitignore`, so it stays safe by default.
+> ✨**pls never share your api keys and any key**
 
 ---
 
